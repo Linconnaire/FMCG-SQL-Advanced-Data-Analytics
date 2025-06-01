@@ -1,4 +1,4 @@
-# SQL Data Analytics Script Documentation
+# Products Sales & Customer Retention SQL Advanced Data Analysis Documentation
 This repository contains a SQL script (SQLQuery3.sql) designed for advanced data analytics on sales and product datasets. It leverages complex queries, Window functions, Common Table Expressions (CTEs), and subqueries to extract valuable business insights and generate comprehensive reports.
 
 # Table of Contents
