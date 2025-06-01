@@ -394,7 +394,7 @@ FROM product_aggregate
 - Purpose: To provide a single, easy-to-query view for detailed product analysis, including performance segmentation, sales metrics, and revenue KPIs.
 
 # 5. How to Use
-1.  Database Connection: Ensure you have access to a SQL Server database (or compatible SQL environment) with the gold.fact_sales, gold.dim_products, and gold.dim_customers tables populated with your data.
+1.  Database Connection: Ensure you have access to a SQL Server database (or compatible SQL environment), create a database with gold schema and add the following: gold.fact_sales, gold.dim_products, and gold.dim_customers tables are populated with your data.
 
 2.  Execute Queries: You can run individual queries or the entire script in your SQL client.
 
