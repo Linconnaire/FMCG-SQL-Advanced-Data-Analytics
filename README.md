@@ -3,13 +3,13 @@ This repository contains a SQL script (SQLQuery3.sql) designed for advanced data
 
 # Table of Contents
 
-1.  [Introduction](#introduction)
+1.  [Introduction](#1-introduction)
 
-2.  [Dataset Assumptions](#dataset-assumptions)
+2.  [Datasets](#2-datasets)
 
-3.  [Script Overview](#script-overview)
+3.  [Script Overview](#3-script-overview)
 
-4.  [Detailed Query Analysis](#detailed-query-analysis)
+4.  [Detailed Query Analysis](#4-detailed-query-analysis)
 
 
 	- Total Sales Trend Over the Year (Monthly)
@@ -28,14 +28,14 @@ This repository contains a SQL script (SQLQuery3.sql) designed for advanced data
 
 	- Product Report View (dbo.product_report)
 
-5.  [How to Use](#how-to-use)
+5.  [How to Use](#5-how-to-use)
 
-6.  [Technologies Used](#technologies-used)
+6.  [Technologies Used](#6-technologies-used)
 
 # 1. Introduction
 This SQL script provides a robust framework for analysing sales and product data. It addresses several key business questions, offering insights into sales trends, product performance, customer behaviour, and category contributions. The script is structured to be clear, efficient, and easily understandable, making use of modern SQL features to achieve its analytical goals. It empowers data-driven decision-making by providing actionable insights into various business facets.
 
-# 2. Dataset
+# 2. Datasets
 This dataset file is in the file section, which includes the following tables with a gold schema:
 
 - gold.fact_sales
