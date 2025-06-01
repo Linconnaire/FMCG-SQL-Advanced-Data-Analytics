@@ -12,21 +12,21 @@ This repository contains a SQL script (SQLQuery3.sql) designed for advanced data
 4.  [Detailed Query Analysis](#4-detailed-query-analysis)
 
 
-	- Total Sales Trend Over the Year (Monthly)
+	- [Total Sales Trend Over the Year (Monthly)](#total-sales-trend-over-the-year-monthly)
 
-	- Total Sales and Running Totals (Monthly)
+	- [Total Sales and Running Totals (Monthly)](#total-sales-and-running-totals-monthly)
 
-	- Yearly Product Performance Analysis
+	- [Yearly Product Performance Analysis](#yearly-product-performance-analysis)
 
-	- Category Contribution to Overall Sales
+	- [Category Contribution to Overall Sales](#category-contribution-to-overall-sales)
 
-	- Product Segmentation by Cost Ranges
+	- [Product Segmentation by Cost Ranges](#product-segmentation-by-cost-ranges)
 
-	- Customer Segmentation by Spending Behaviour
+	- [Customer Segmentation by Spending Behaviour](#customer-segmentation-by-spending-behavior)
 
-	- Customer Report View (dbo.customer_report)
+	- [Customer Report View (dbo.customer_report)](#customer-report-view-dbocustomer_report)
 
-	- Product Report View (dbo.product_report)
+	- [Product Report View (dbo.product_report)](#product-report-view-dboproduct_report)
 
 5.  [How to Use](#5-how-to-use)
 
