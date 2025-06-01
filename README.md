@@ -11,28 +11,28 @@ This repository contains a SQL script (SQLQuery3.sql) designed for advanced data
 
 4.  Detailed Query Analysis
 
-- Total Sales Trend Over the Year (Monthly)
+	- Total Sales Trend Over the Year (Monthly)
 
-- Total Sales and Running Totals (Monthly)
+	- Total Sales and Running Totals (Monthly)
 
-- Yearly Product Performance Analysis
+	- Yearly Product Performance Analysis
 
-- Category Contribution to Overall Sales
+	- Category Contribution to Overall Sales
 
-- Product Segmentation by Cost Ranges
+	- Product Segmentation by Cost Ranges
 
-- Customer Segmentation by Spending Behaviour
+	- Customer Segmentation by Spending Behaviour
 
-- Customer Report View (dbo.customer_report)
+	- Customer Report View (dbo.customer_report)
 
-- Product Report View (dbo.product_report)
+	- Product Report View (dbo.product_report)
 
 5.  How to Use
 
 6.  Technologies Used
 
 # 1. Introduction
-This SQL script provides a robust framework for analysing sales and product data. It addresses several key business questions, offering insights into sales trends, product performance, customer behavior, and category contributions. The script is structured to be clear, efficient, and easily understandable, making use of modern SQL features to achieve its analytical goals. It empowers data-driven decision-making by providing actionable insights into various business facets.
+This SQL script provides a robust framework for analysing sales and product data. It addresses several key business questions, offering insights into sales trends, product performance, customer behaviour, and category contributions. The script is structured to be clear, efficient, and easily understandable, making use of modern SQL features to achieve its analytical goals. It empowers data-driven decision-making by providing actionable insights into various business facets.
 
 # 2. Dataset
 This dataset file is in the file section, which includes the following tables with a gold schema:
@@ -185,7 +185,7 @@ ORDER BY total_product desc
 ```
 - Purpose: To classify products based on their cost, which can be useful for inventory management, pricing strategies, and understanding product portfolio distribution.
 
-##Customer Segmentation by Spending Behavior
+## Customer Segmentation by Spending Behavior
 This query segments customers into 'VIP', 'Regular', and 'New Customer' categories based on their total spending and purchase history (lifespan).
 
 ```sql
@@ -217,7 +217,7 @@ FROM(
 GROUP BY customer_segment
 ORDER BY 2
 ```
-- Purpose: To categorize customers for targeted marketing, loyalty programs, and personalized outreach.
+- Purpose: To categorise customers for targeted marketing, loyalty programs, and personalised outreach.
 Assigns a (customer_segment) based on lifespan and total_spending:
      * VIP: Lifespan ≥12 months AND total spending >£5,000.
      * Regular: Lifespan ≥12 months AND total spending ≤£5,000.
@@ -225,6 +225,7 @@ Assigns a (customer_segment) based on lifespan and total_spending:
 
 ## Customer Report View (dbo.customer_report)
 This section creates a SQL VIEW named dbo.customer_report that provides a comprehensive overview of customer data, including segmentation, aggregated metrics, and key performance indicators (KPIs).
+
 ```sql
 CREATE VIEW dbo.customer_report AS
 WITH base_query AS (
@@ -298,7 +299,6 @@ CASE WHEN lifespan = 0 THEN total_sales
      ELSE total_sales / lifespan
 END AS avg_monthly_spent
 FROM customer_aggregation
-
 ```
 - Purpose: To provide a single, easy-to-query view for detailed customer analysis, including demographic information, spending habits, and loyalty metrics, which will be used for PowerBI dashboard reports.
 
@@ -393,17 +393,17 @@ FROM product_aggregate
 - Purpose: To provide a single, easy-to-query view for detailed product analysis, including performance segmentation, sales metrics, and revenue KPIs.
 
 # 5. How to Use
-     1.  Database Connection: Ensure you have access to a SQL Server database (or compatible SQL environment) with the gold.fact_sales, gold.dim_products, and gold.dim_customers tables populated with your data.
+1.  Database Connection: Ensure you have access to a SQL Server database (or compatible SQL environment) with the gold.fact_sales, gold.dim_products, and gold.dim_customers tables populated with your data.
 
-     2.  Execute Queries: You can run individual queries or the entire script in your SQL client.
+2.  Execute Queries: You can run individual queries or the entire script in your SQL client.
 
-     3.  Create Views: To utilize the customer_report and product_report, execute their respective CREATE VIEW statements. Once created, you can query them like regular tables:
+3.  Create Views: To utilize the customer_report and product_report, execute their respective CREATE VIEW statements. Once created, you can query them like regular tables:
 
 ```sql
 SELECT * FROM dbo.customer_report;
 SELECT * FROM dbo.product_report;
 ```
-    4.  Adaptation: Modify table names, schema names, or column names as needed to match your specific database schema. Adjust the segmentation thresholds (e.g., for VIP customers or product performance) to align with your business definitions.
+4.  Adaptation: Modify table names, schema names, or column names as needed to match your specific database schema. Adjust the segmentation thresholds (e.g., for VIP customers or product performance) to align with your business definitions.
 
 # 6. Technologies Used
 - MsSQL: The primary language used for data manipulation and analysis.
