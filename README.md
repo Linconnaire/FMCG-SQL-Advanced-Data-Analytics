@@ -3,13 +3,14 @@ This repository contains a SQL script (SQLQuery3.sql) designed for advanced data
 
 # Table of Contents
 
-1.  Introduction
+1.  [Introduction](#introduction)
 
-2.  Dataset Assumptions
+2.  [Dataset Assumptions](#dataset-assumptions)
 
-3.  Script Overview
+3.  [Script Overview](#script-overview)
 
-4.  Detailed Query Analysis
+4.  [Detailed Query Analysis](#detailed-query-analysis)
+
 
 	- Total Sales Trend Over the Year (Monthly)
 
@@ -27,9 +28,9 @@ This repository contains a SQL script (SQLQuery3.sql) designed for advanced data
 
 	- Product Report View (dbo.product_report)
 
-5.  How to Use
+5.  [How to Use](#how-to-use)
 
-6.  Technologies Used
+6.  [Technologies Used](#technologies-used)
 
 # 1. Introduction
 This SQL script provides a robust framework for analysing sales and product data. It addresses several key business questions, offering insights into sales trends, product performance, customer behaviour, and category contributions. The script is structured to be clear, efficient, and easily understandable, making use of modern SQL features to achieve its analytical goals. It empowers data-driven decision-making by providing actionable insights into various business facets.
@@ -46,7 +47,7 @@ This dataset file is in the file section, which includes the following tables wi
 # 3. Script Overview
 The script is organised into several distinct sections, each addressing a specific analytical objective:
 
-- Sales Trend Analysis: Queries to understand monthly sales performance and running totals.
+- Sales Trend Analysis: Queries to understand monthly sales performance and running totals
 
 - Product Performance: Analysis of product sales year-over-year and against average performance.
 
